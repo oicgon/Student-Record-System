@@ -1,0 +1,46 @@
+[1] ADD OPTION
+	-Adds a record to the database.
+	-Add restrictions:
+		>Cannot have a duplicate Student Number, Contact Number, Email that exists in the database.
+		>Student Number is a primary key. It contains a maximum of 10 numbers.
+		>Birthdate input format: MM/DD/YYYY
+		>Contact number(cellphone) contains a maximum of 11 numbers.
+		>Cannot have NULL inputs for every entry.
+		>Cannot have a digit input for Last Name, First Name, Program, and Gender.
+		>Cannot have an alpha input for Student Number, Birthdate, and Contact Number.
+
+[2] EDIT OPTION
+	-Edits an existing record on the database.
+	-Primary key is needed to edit a certain student's record.
+	-Edit restrictions:
+		>Cannot edit a primary key.
+		>Same restrictions when adding a record for each of the entry.
+
+[3] DELETE OPTION
+	-Deletes an existing record on the database.
+	-Primary key is needed to delete a certain student's record.
+
+[4] VIEW / SEARCH / SORT OPTION
+	VIEW
+	-Views an existing record on the database.
+	SEARCH
+	-Searches for a specific Student Number, Last Name, First Name, Email, or Contact Number.
+	SORT
+	-Sort an existing record on the database.
+	-Sort only per column and by ascending or descending.
+
+[5] LOAD OPTION
+	-Loads a certain record and append it on the existing records.
+	-Load Restriction:
+		>Must enter the absolute path of a directory where the record lies.
+		>Must enter the exact file name with extension of the file.
+	-Appends only the records with unique Student Number, Email, and Contact Number from existing records.
+
+[6] VIEW LOGS OPTION
+	-Views every action made using the system.
+	-Records the user currently using the system, date and time of every action, actions made, and records name.
+
+[0] EXIT PROGRAM
+	-Terminate system.
+
+#Created by Gonzales, Omar Ismael C. 2021, COE197P-E02 MACHINE PROGRAM

@@ -1,0 +1,3 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'unixuser'@'localhost' (using password: YES)
+mysql: [Warning] Using a password on the command line interface can be insecure.
