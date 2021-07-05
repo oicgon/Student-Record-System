@@ -15,8 +15,8 @@ mysql MP -u $WHO -p"$PASSWORD" -e "DESCRIBE StudRec;" >>/dev/null
 		echo -n "."
 		sleep 1
 		echo -n "."
-		mysql $WHO -p"$PASSWORD" -e "CREATE DATABASE IF NOT EXISTS MP;"
-		mysql $WHO -p"$PASSWORD" MP -e "CREATE TABLE StudRec (Student_No INT PRIMARY KEY, Last_Name VARCHAR(20), First_Name VARCHAR(20), Program VARCHAR(30), Email VARCHAR(40) UNIQUE, Gender VARCHAR(6), Birthdate VARCHAR(10), Contact_No VARCHAR(11) UNIQUE);"
+		mysql -u $WHO -p"$PASSWORD" -e "CREATE DATABASE IF NOT EXISTS MP;"
+		mysql -u $WHO -p"$PASSWORD" MP -e "CREATE TABLE StudRec (Student_No INT PRIMARY KEY, Last_Name VARCHAR(20), First_Name VARCHAR(20), Program VARCHAR(30), Email VARCHAR(40) UNIQUE, Gender VARCHAR(6), Birthdate VARCHAR(10), Contact_No VARCHAR(11) UNIQUE);"
 		echo "New database initialized!"
 		EVENT="DBA_INIT"
 		LOGS $EVENT
